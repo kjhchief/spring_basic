@@ -6,8 +6,10 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class SpringApplication {
 
 	public static void main(String[] args) {
-		// 스프링 빈 컨테이너 생성
+		// 스프링 빈 컨테이너 생성!
 		ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
+		// 스프링 컨테이너 안에는 
+		
 		
 		// 스프링 컨테이너에서 빈 조회(빈의 이름으로)
 //		Unit unit = (Unit)applicationContext.getBean("unit");

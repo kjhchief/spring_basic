@@ -11,7 +11,7 @@ public class Marine implements Unit {
 	private int level;
 	
 	@Autowired
-	//@Qualifier("gun")
+	@Qualifier("gun")
 	private Weapon weapon;
 	
 	public Marine() {}

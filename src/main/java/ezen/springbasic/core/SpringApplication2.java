@@ -18,12 +18,12 @@ public class SpringApplication2 {
 		System.out.println(unit == unit2);
 		
 		// 등록된 빈 모두 조회
-//		int count = applicationContext.getBeanDefinitionCount();
-//		System.out.println("빈의 갯수 : " + count);
-//		String[] beanNames = applicationContext.getBeanDefinitionNames();
-//		for (String beanName : beanNames) {
-//			System.out.println(beanName+" : " + applicationContext.getBean(beanName));
-//		}
+		int count = applicationContext.getBeanDefinitionCount();
+		System.out.println("빈의 갯수 : " + count);
+		String[] beanNames = applicationContext.getBeanDefinitionNames();
+		for (String beanName : beanNames) {
+			System.out.println(beanName+" : " + applicationContext.getBean(beanName));
+		}
 	}
 }
 
