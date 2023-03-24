@@ -2,11 +2,14 @@ package ezen.springbasic.core;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class SpringApplication {
 
 	public static void main(String[] args) {
-		// 스프링 빈 컨테이너 생성!
+		
+//		new ClassPathXmlApplicationContext("spring-config.xml");
+		// 스프링 빈 컨테이너 생성! 스프링 애플리케이션 실행 환경
 		ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
 		// 스프링 컨테이너 안에는 
 		

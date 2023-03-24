@@ -17,9 +17,9 @@ import org.springframework.stereotype.Repository;
 import ezen.springbasic.guestbook.dto.Guestbook;
 
 
-@Component
-//@Repository
-public class MemoryGuestbookRepository implements GuestbookDao {
+//@Component
+@Repository
+public class MemoryGuestbookDao implements GuestbookDao {
 	
 	private Map<Integer, Guestbook> repository = new HashMap<Integer, Guestbook>();
 	
@@ -33,9 +33,9 @@ public class MemoryGuestbookRepository implements GuestbookDao {
 	
 	@PostConstruct
 	public void init() {
-		repository.put(++sequence, new Guestbook());
-		repository.put(++sequence, new Guestbook());
-		repository.put(++sequence, new Guestbook());
+		repository.put(++sequence, new Guestbook("aaaa", "방명록 내용입니다"));
+		repository.put(++sequence, new Guestbook("bbbb", "방명록 내용입니다"));
+		repository.put(++sequence, new Guestbook("cccc", "방명록 내용입니다"));
 	}
 
 	@Override

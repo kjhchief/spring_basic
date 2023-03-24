@@ -5,13 +5,14 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
+// Spring Container에 빈으로 등록하라는 어노테이션. 클래스 이름 Marine이 소문자로 자동 변환되어 등록됨
 public class Marine implements Unit {
 	
 	private String name;
 	private int level;
 	
-	@Autowired
-	@Qualifier("gun")
+	@Autowired //타입으로 엮어주기
+	@Qualifier("sword") //근데 타입이 여러개라 특정 객체를 지정
 	private Weapon weapon;
 	
 	public Marine() {}

@@ -10,8 +10,8 @@ import org.springframework.stereotype.Service;
 import ezen.springbasic.guestbook.dao.GuestbookDao;
 import ezen.springbasic.guestbook.dto.Guestbook;
 
-@Component
-//@Service
+//@Component
+@Service
 public class GuestbookServiceImpl implements GuestbookService {
 	
 	@Autowired

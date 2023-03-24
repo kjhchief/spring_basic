@@ -11,6 +11,7 @@ import ezen.springbasic.core.Unit;
 
 public class SpringContainerTest {
 	
+	//스프링 컨테이너 먼저 생성
 	ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AutoAppConfig.class);
 	
 	@Test
